@@ -14,37 +14,32 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        txv = findViewById(R.id.txv)
+
     }
 
     fun AddOne(v:View) {
         if(v.id == R.id.btn) {
             count++
             if(count==1) {
-                word = "大家好，我叫蔡榮宏"
+                word = "你好～我叫顏聖凱，也可以叫我小凱就好！"
             }
             if(count==2) {
-                word = "我是屏東人，從屏榮高中畢業後就讀靜宜大學資管系，目前大二\n"
+                word = "我是台中豐原人，高中就讀明道高中商業經營科，現在是靜宜大學資管系大二。\n"
             }
             if(count==3) {
-                word = "我是個個性比較內向的人，從以前開始就不太會跟別人聊天，\n" +
-                        "也導致我從以前開始社交能力就很差，所以希望上大學後可以\n" +
-                        "認識更多人，交更多朋友"
+                word = "我的興趣與專長是彈吉他，希望未來也可以從音樂這一塊進入，現在則是在做吉他家教。\n"
             }
             if(count==4) {
-                word = "我平常的興趣是看劇、打遊戲，所以平時很少出門運動，\n" +
-                        "平時喜歡自己一個人\n"
-
+                word = "我算是一個比較樂觀的人，自己一個人的時候個性比較內向，但跟朋友一起的時候會變得比較外向，\n" +
+                        "會努力炒熱氣氛，希望身邊的每個人都能快樂！\n"
             }
             if(count==5) {
-                word = "在大學這兩年期間，學到了許多東西，而讓我最感興趣的是寫\n" +
-                        "程式、網頁製作，也希望自己能夠學得更多，對未來工作有幫助\n"
-
+                word = "我的座右銘：即使當下事與願違，請你堅信你依然能勝天半子！\n"
             }
         }
         else{
             count = 0
-            word = "我的介紹的這，謝謝大家"
+            word = "謝謝大家，以上是我的自我介紹"
         }
         txv.text = word
 
